@@ -6,11 +6,6 @@ body {
   @apply font-mono bg-tn-dark text-tn-foreground;
 }
 
-p,
-pre {
-  @apply leading-relaxed;
-}
-
 input,
 input:focus {
   @apply bg-transparent border-none outline-none;

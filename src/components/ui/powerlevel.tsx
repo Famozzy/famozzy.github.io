@@ -22,24 +22,38 @@ const ArchIcon = () => (
   </svg>
 )
 
+const Separator = () => (
+  <span className="block bg-tn-highlight px-2">
+    <span className="block w-[0.5px] h-4 rotate-[25deg] bg-tn-fg-dark"></span>
+  </span>
+)
+
+const Tail = () => (
+  <>
+    <span className=" bg-tn-highlight opacity-25">&nbsp;</span>
+    <span className="bg-tn-highlight opacity-50">&nbsp;</span>
+    <span className="bg-tn-highlight opacity-75">&nbsp;</span>
+    <span className="flex items-center bg-tn-highlight text-tn-cyan px-1 h-4">
+      <ArchIcon />
+    </span>
+  </>
+)
+
+const Head = () => (
+  <>
+    <span className="block bg-tn-highlight text-tn-cyan px-1.5">~</span>
+    <span className="block w-0 h-0 border-solid border-b-[8px] border-b-transparent border-t-[9px] border-t-transparent border-l-[10px] border-l-tn-highlight mr-1.5"></span>
+  </>
+)
+
 const Powerlevel = () => {
   return (
     <div className="inline-flex items-center mt-1">
-      <span className=" bg-tn-highlight opacity-25">&nbsp;</span>
-      <span className="bg-tn-highlight opacity-50">&nbsp;</span>
-      <span className="bg-tn-highlight opacity-75">&nbsp;</span>
-      <span className="flex items-center bg-tn-highlight text-tn-cyan px-2 h-5">
-        <ArchIcon />
-      </span>
-      <span className="block bg-tn-highlight px-2">
-        <span className="block w-[0.5px] h-5 rotate-[25deg] bg-tn-fg-dark"></span>
-      </span>
+      <Tail />
+      <Separator />
       <span className="block bg-tn-highlight text-tn-yellow px-1.5">root@{hostname}</span>
-      <span className="block bg-tn-highlight px-2">
-        <span className="block w-[0.5px] h-5 rotate-[25deg] bg-tn-fg-dark"></span>
-      </span>
-      <span className="block bg-tn-highlight text-tn-cyan px-1.5">~</span>
-      <span className="block w-0 h-0 border-solid border-b-[10px] border-b-transparent border-t-[10px] border-t-transparent border-l-[11px] border-l-tn-highlight mr-1.5"></span>
+      <Separator />
+      <Head />
     </div>
   )
 }

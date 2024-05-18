@@ -34,7 +34,7 @@ export const CommandInput = () => {
   return (
     <div>
       <Powerlevel />
-      <input onKeyDown={onKeyPress} type="text" autoFocus />
+      <input onKeyDown={onKeyPress} type="text" autoFocus aria-label="cmd-input" />
     </div>
   )
 }
