@@ -42,13 +42,13 @@ const Tail = () => (
 const Head = () => (
   <>
     <span className="block bg-tn-highlight text-tn-cyan px-1.5">~</span>
-    <span className="block w-0 h-0 border-solid border-b-[8px] border-b-transparent border-t-[9px] border-t-transparent border-l-[10px] border-l-tn-highlight mr-1.5"></span>
+    <span className="block w-0 h-0 border-solid border-b-[8px] border-b-transparent border-t-[8px] border-t-transparent border-l-[10px] border-l-tn-highlight mr-1.5"></span>
   </>
 )
 
 const Powerlevel = () => {
   return (
-    <div className="inline-flex items-center mt-1">
+    <div className="inline-flex items-center my-0.5">
       <Tail />
       <Separator />
       <span className="block bg-tn-highlight text-tn-yellow px-1.5">root@{hostname}</span>
