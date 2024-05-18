@@ -13,7 +13,6 @@ const ArchIcon = () => (
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     stroke="#86e1fc"
-    className="block mt-1 w-3 h-3"
   >
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -25,11 +24,11 @@ const ArchIcon = () => (
 
 const Powerlevel = () => {
   return (
-    <div className="inline-flex mt-1">
+    <div className="inline-flex items-center mt-1">
       <span className=" bg-tn-highlight opacity-25">&nbsp;</span>
       <span className="bg-tn-highlight opacity-50">&nbsp;</span>
       <span className="bg-tn-highlight opacity-75">&nbsp;</span>
-      <span className="block bg-tn-highlight text-tn-cyan px-1.5">
+      <span className="flex items-center bg-tn-highlight text-tn-cyan px-2 h-5">
         <ArchIcon />
       </span>
       <span className="block bg-tn-highlight px-2">
@@ -40,7 +39,7 @@ const Powerlevel = () => {
         <span className="block w-[0.5px] h-5 rotate-[25deg] bg-tn-fg-dark"></span>
       </span>
       <span className="block bg-tn-highlight text-tn-cyan px-1.5">~</span>
-      <span className="block w-0 h-0 border-solid border-b-[11px] border-b-transparent border-t-[11px] border-t-transparent border-l-[11px] border-l-tn-highlight mr-1.5"></span>
+      <span className="block w-0 h-0 border-solid border-b-[10px] border-b-transparent border-t-[10px] border-t-transparent border-l-[11px] border-l-tn-highlight mr-1.5"></span>
     </div>
   )
 }

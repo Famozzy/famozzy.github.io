@@ -12,7 +12,7 @@ const Terminal = () => {
   return (
     <div
       onClick={clickHandle}
-      className="w-full text-xs bg-tn-background border-2 border-tn-fg-gutter p-1.5 max-w-3xl h-96 overflow-y-auto md:text-sm"
+      className="w-full text-sm bg-tn-background border-2 border-tn-fg-gutter p-1.5 max-w-3xl h-96 overflow-y-auto"
     >
       {ioStreams.map((element, index) => (
         <div key={index}>{element}</div>
