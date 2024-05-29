@@ -5,7 +5,7 @@ const { projects } = data
 
 const Projects = () => {
   return (
-    <div>
+    <>
       {projects.map(({ name, description, link, type }) => (
         <div key={name}>
           <p>
@@ -25,7 +25,7 @@ const Projects = () => {
         </Link>{' '}
         for more projects.
       </p>
-    </div>
+    </>
   )
 }
 

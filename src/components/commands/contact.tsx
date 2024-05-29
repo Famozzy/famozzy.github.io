@@ -5,7 +5,7 @@ const { contacts } = data
 
 const Contact = () => {
   return (
-    <div>
+    <>
       <p>here are some ways to contact me:{'\n'}</p>
       {contacts.map(({ name, link }) => (
         <p key={name}>
@@ -15,7 +15,7 @@ const Contact = () => {
           </Link>
         </p>
       ))}
-    </div>
+    </>
   )
 }
 

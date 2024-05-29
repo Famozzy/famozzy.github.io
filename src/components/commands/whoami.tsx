@@ -6,11 +6,11 @@ const WhoAmI = () => {
   ]
 
   return (
-    <div>
+    <>
       {texts.map((text, index) => (
         <p key={index}>{text}</p>
       ))}
-    </div>
+    </>
   )
 }
 
