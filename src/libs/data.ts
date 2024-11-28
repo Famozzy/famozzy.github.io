@@ -12,11 +12,11 @@ type Project = {
 
 export const contacts: Contact[] = [
   {
-    name: 'Email',
+    name: 'email',
     link: 'mailto:faidilf@proton.me'
   },
   {
-    name: 'LinkedIn',
+    name: 'linkedin',
     link: 'https://linkedin.com/in/faidil'
   }
 ]

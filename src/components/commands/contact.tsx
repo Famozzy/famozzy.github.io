@@ -9,9 +9,9 @@ const Contact = () => {
       <p>here are some ways to contact me:{'\n'}</p>
       {contacts.map(({ name, link }) => (
         <p key={name}>
-          {'- '}
+          {`[${name}] : `}
           <Link href={link} target="_blank">
-            {name}
+            {link.replace(/(mailto:|https:\/\/)/, '')}
           </Link>
         </p>
       ))}
