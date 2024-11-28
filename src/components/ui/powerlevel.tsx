@@ -5,8 +5,8 @@ const hostname = getRandomHostname()
 const ArchIcon = () => (
   <svg
     fill="#86e1fc"
-    width="12px"
-    height="12px"
+    width="10px"
+    height="10px"
     viewBox="0 0 14 14"
     role="img"
     focusable="false"

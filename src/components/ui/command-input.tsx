@@ -1,6 +1,6 @@
-import { useSetAtom } from 'jotai'
 import { ioStreamsAtom } from '@/app/store'
-import { Help, WhoAmI, Contact, NotFound, Powerlevel, Projects } from '@/components'
+import { Contact, Help, NotFound, Powerlevel, Projects, WhoAmI } from '@/components'
+import { useSetAtom } from 'jotai'
 
 type Command = {
   [key: string]: React.ReactNode
@@ -34,7 +34,7 @@ export const CommandInput = () => {
   return (
     <>
       <Powerlevel />
-      <input onKeyDown={onKeyPress} type="text" autoFocus aria-label="cmd-input" />
+      <input className="w-1/3" onKeyDown={onKeyPress} type="text" autoFocus aria-label="cmd-input" />
     </>
   )
 }
